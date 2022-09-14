@@ -18,6 +18,7 @@ jobs:
             pip install pipenv
             pipenv --python /opt/hostedtoolcache/Python/3.10.5/x64/bin/python3
             pipenv update
+            pipenv install --system
             npm -g install snyk@latest
             snyk auth ${SNYK_TOKEN}
             snyk monitor --command=.venv/bin/python --file=Pipfile --dev
