@@ -16,7 +16,8 @@ jobs:
         run: |
             which python3
             pip install pipenv
-            
+            pipenv --python /opt/hostedtoolcache/Python/3.10.5/x64/bin/python3
+
             pipenv install
             
             npm -g install snyk@latest
