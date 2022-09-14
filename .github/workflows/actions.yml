@@ -15,7 +15,9 @@ jobs:
       - name: install snyk
         run: |
             pip install pipenv
+            pipenv --python .venv/bin/python3
             pipenv install
+            
             npm -g install snyk@latest
             snyk auth ${SNYK_TOKEN}
             snyk monitor --command=.venv/bin/python --file=Pipfile --dev
