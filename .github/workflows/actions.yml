@@ -16,7 +16,6 @@ jobs:
         run: |
             which python3
             pip install pipenv
-            pipenv --python
             pipenv install --dev
             npm -g install snyk@latest
             snyk auth ${SNYK_TOKEN}
