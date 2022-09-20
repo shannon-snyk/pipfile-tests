@@ -9,6 +9,8 @@ requests = "*"
 fastapi = "*"
 mangum = "*"
 numpy = ">=1.23.0"
+pipdeptree = "*"
+scikit-learn = "*"
 
 [dev-packages]
 pytest = "*"
@@ -21,6 +23,8 @@ cfn-lint = "*"
 pytest-asyncio = "*"
 testcontainers = "*"
 requests-mock = "*"
+jeepney = "*"
+pyjwt = "*"
 
 [requires]
 python_version = "3.10"
