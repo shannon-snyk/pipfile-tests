@@ -8,9 +8,9 @@ jira = "*"
 requests = "*"
 fastapi = "*"
 mangum = "*"
-numpy = ">=1.23.0"
 pipdeptree = "*"
 scikit-learn = "*"
+numpy = "==1.23.0"
 
 [dev-packages]
 pytest = "*"
