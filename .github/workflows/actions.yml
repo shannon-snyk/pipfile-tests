@@ -14,11 +14,11 @@ jobs:
           python-version: 3.10.5
       - name: install snyk
         run: |
-            which python3
             pip install pipenv
+            which python3
             pipenv install --dev
             npm -g install snyk@latest
             snyk auth ${SNYK_TOKEN}
-            snyk monitor --dev --command=.venv/bin/python3 --print-deps
+            snyk monitor --dev --file=Pipfile --command=.venv/bin/python3 --print-deps
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
