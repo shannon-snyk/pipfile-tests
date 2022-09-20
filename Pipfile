@@ -10,7 +10,7 @@ fastapi = "*"
 mangum = "*"
 pipdeptree = "*"
 scikit-learn = "*"
-numpy = "==1.23.0"
+numpy = "~=1.23.0"
 
 [dev-packages]
 pytest = "*"
